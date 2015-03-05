@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="app/css/vendor/flowplayer/minimalist.css">
+    <link rel="stylesheet" href="app/css/main.css">
+</head>
+<body>
+
+<div id="content">
+
+    <h1>nerdTV</h1>
+
+    <div class="flowplayer play-button fixed-controls">
+        <video autoplay>
+            <source type="video/flash" src="march">
+        </video>
+    </div>
+
+    <a href="rtmp://nginx-rtmp.Labs.IntelliJ.Net:1935/live">Watch video</a>
+
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="//code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+<script src="app/js/vendor/flowplayer/flowplayer.min.js"></script>
+<script>
+    flowplayer.conf = {
+        live: true, // mandatory with live streams
+        rtmp: "rtmp://nginx-rtmp.Labs.IntelliJ.Net:1935/live",
+        ratio: 9 / 16
+    };
+
+    flowplayer(function (api, root) {
+        api.bind("load", function (e, api, video) {
+            $("#vtype").text(video.type);
+
+            // announce missing stream
+        }).bind("error", function (e, api, err) {
+            if (err.code === 4 || err.code === 9) {
+                $(".fp-message p", root).text("We are sorry, currently no live stream available.");
+            }
+        });
+    });
+</script>
+</body>
+</html>

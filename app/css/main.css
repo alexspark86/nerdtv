@@ -1,0 +1,5 @@
+@import "vendor/video-js/video-js.css";
+
+.vjs-default-skin .vjs-progress-control {
+    display: none;
+}

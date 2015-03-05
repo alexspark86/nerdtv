@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link href="app/css/main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<div id="content">
+
+    <h1>nerdTV</h1>
+
+    <video id="nerdPlayer" class="video-js vjs-default-skin" controls preload="auto" width="1280" height="720">
+        <source src="rtmp://nginx-rtmp.Labs.IntelliJ.Net:1935/live/march" type="video/flash">
+    </video>
+    <a href="rtmp://nginx-rtmp.Labs.IntelliJ.Net:1935/live/march">view video</a>
+</div>
+
+<script data-main="app/js/main" src="app/js/vendor/requirejs/require.js"></script>
+<!--<script src="app/js/vendor/video-js/video.js"></script>-->
+<!--<script src="app/js/videoPlayer.js"></script>-->
+</body>
+</html>
