@@ -1,0 +1,26 @@
+.header {
+  background: $headerBg;
+  color: $headerColor;
+
+  .container {
+    padding: 12px 0 15px;
+    min-height: 63px;
+  }
+}
+
+.header__logo {
+  float: left;
+  margin: 0 0 0 27px;
+  overflow: hidden;
+  width: 211px;
+  height: 65px;
+  background: url(../img/nerdtv-logo.svg) 0 0 / 100% no-repeat;
+  font-size: 0;
+  text-indent: 100%;
+}
+.header__slogan {
+  float: right;
+  margin: 10px 65px 0 0;
+  font-size: 18px;
+  line-height: 22px;
+}

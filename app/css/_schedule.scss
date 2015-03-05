@@ -1,0 +1,156 @@
+.schedule {}
+
+.schedule-item {
+  margin: 7px 0;
+  background: $scheduleBg;
+
+  .container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row nowrap;
+    min-height: 288px;
+    }
+  }
+
+  .schedule-item__col1 {
+    position: relative;
+    width: 20%;
+    min-width: 260px;
+    }
+  .schedule-item__col2 {
+    width: 24%;
+    min-width: 310px;
+    }
+  .schedule-item__col2,
+  .schedule-item__col3 {
+    border-left: 1px solid $bodyBg;
+    }
+
+  .schedule-item__logo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    &:before {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      background-position: 0 0;
+      background-size: cover;
+      background-repeat: no-repeat;
+      content: '';
+    }
+
+    &._millioner {
+      background: #6b2b90;
+      &:before {
+        width: 171px;
+        height: 167px;
+        background-image: url(../img/logo-millioner.svg);
+      }
+    }
+    &._vsedoma {
+      background: #bed62f;
+      &:before {
+        width: 146px;
+        height: 115px;
+        background-image: url(../img/logo-vsedoma.svg);
+      }
+    }
+    &._melody {
+      background: #2c3393;
+      &:before {
+        width: 205px;
+        height: 160px;
+        background-image: url(../img/logo-melody.svg);
+      }
+    }
+    &._ntv {
+      background: #c02659;
+      &:before {
+        width: 146px;
+        height: 102px;
+        background-image: url(../img/logo-ntv.svg);
+      }
+    }
+    &._svoya {
+      background: #595d74;
+      &:before {
+        width: 172px;
+        height: 88px;
+        background-image: url(../img/logo-svoya.svg);
+      }
+    }
+  }
+
+
+.title {
+  position: relative;
+  padding: 40px 25px 35px 32px;
+  }
+  .title__text {
+    margin: 0 0 55px;
+    min-height: 115px;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 36px;
+    }
+  .title__time {
+    font-size: 14px;
+    line-height: 22px;
+
+    strong {
+      display: block;
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+
+
+.description {
+  padding: 40px 80px 38px 42px;
+  }
+  .description__photo {
+    position: relative;
+    overflow: hidden;
+    float: left;
+    margin: 0 50px 15px 0;
+    width: 146px;
+    height: 146px;
+    img {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      }
+    }
+  .description__leading {
+    clear: left;
+    float: left;
+    margin: 0 50px 0 0;
+    width: 146px;
+    font-size: 14px;
+    line-height: 22px;
+
+    strong {
+      display: block;
+      font-size: 20px;
+      font-weight: 600;
+      }
+    }
+  .description__text {
+    color: $scheduleColor;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+    }

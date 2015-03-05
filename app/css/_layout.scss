@@ -1,0 +1,19 @@
+body {
+  min-width: 1280px;
+  background: $bodyBg;
+  color: $bodyColor;
+  font-family: $fontFamilyMain;
+}
+
+.container {
+  position: relative;
+  width: 1280px;
+  margin: 0 auto;
+
+  &:after {
+    clear: both;
+    display: block;
+    height: 0;
+    content: '';
+  }
+}
