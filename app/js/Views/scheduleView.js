@@ -2,7 +2,7 @@ define([
     'jquery',
     'underscore',
     'backbone',
-    'text!templates/scheduleItemTemplate.html',
+    'text!templates/scheduleItem.html',
     'text!data/schedule.json'
 ], function($, _, Backbone, scheduleItemTemplate, scheduleData) {
 
