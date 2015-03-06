@@ -42,15 +42,52 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/* Open Sans */
+@font-face {
+  font-family: 'Open Sans';
+  src: local("Open Sans"), local("OpenSans"), url("../../fonts/OpenSans/OpenSans-Regular-webfont.woff"); }
+@font-face {
+  font-family: "Open Sans";
+  font-style: italic;
+  src: local("Open Sans Italic"), local("OpenSans-Italic"), url("../../fonts/OpenSans/OpenSans-Italic-webfont.woff"); }
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Open Sans Bold"), local("OpenSans-Bold"), url("../../fonts/OpenSans/OpenSans-Bold-webfont.woff"); }
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 300;
+  src: local("Open Sans Light"), local("OpenSans-Light"), url("../../fonts/OpenSans/OpenSans-Light-webfont.woff"); }
+@font-face {
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 300;
+  src: local("Open Sans Light Italic"), local("OpenSans-LightItalic"), url("../../fonts/OpenSans/OpenSans-LightItalic-webfont.woff"); }
+@font-face {
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 700;
+  src: local("Open Sans Bold Italic"), local("OpenSans-BoldItalic"), url("../../fonts/OpenSans/OpenSans-BoldItalic-webfont.woff"); }
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 500;
+  font-style: normal;
+  src: local("Open Sans Semibold"), local("OpenSans-Semibold"), url("../../fonts/OpenSans/OpenSans-Semibold-webfont.woff"); }
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 500;
+  font-style: italic;
+  src: local("Open Sans Semibold Italic"), local("OpenSans-SemiboldItalic"), url("../../fonts/OpenSans/OpenSans-SemiboldItalic-webfont.woff"); }
 body {
-  min-width: 1280px;
+  min-width: 800px;
   background: #000;
   color: #fff;
-  font-family: "Proxima Nova", Helvetica, Arial, sans-serif; }
+  font-family: "Proxima Nova", "Open Sans", Helvetica, Arial, sans-serif; }
 
 .container {
   position: relative;
-  width: 1280px;
+  max-width: 1280px;
   margin: 0 auto; }
   .container:after {
     clear: both;
@@ -105,6 +142,15 @@ body {
   left: 0;
   margin: auto; }
 
+#nerdPlayer {
+  margin: auto;
+  width: 800px;
+  height: 600px; }
+
+@media only screen and (min-width: 1224px) {
+  #nerdPlayer {
+    width: 1280px;
+    height: 720px; } }
 .schedule-item {
   margin: 7px 0;
   background: #2e3379; }
@@ -119,11 +165,11 @@ body {
 
 .schedule-item__col1 {
   position: relative;
-  width: 20%;
+  flex-basis: 20%;
   min-width: 260px; }
 
 .schedule-item__col2 {
-  width: 24%;
+  flex-basis: 24%;
   min-width: 310px; }
 
 .schedule-item__col2,
@@ -186,7 +232,7 @@ body {
   margin: 0 0 55px;
   min-height: 115px;
   font-size: 36px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 36px; }
 
 .title__time {
@@ -198,13 +244,13 @@ body {
     font-weight: 600; }
 
 .description {
-  padding: 40px 80px 38px 42px; }
+  padding: 40px 80px 38px 35px; }
 
 .description__photo {
   position: relative;
   overflow: hidden;
   float: left;
-  margin: 0 50px 15px 0;
+  margin: 0 8% 15px 0;
   width: 146px;
   height: 146px; }
   .description__photo img {
@@ -218,7 +264,7 @@ body {
 .description__leading {
   clear: left;
   float: left;
-  margin: 0 50px 0 0;
+  margin: 0 8% 7px 0;
   width: 146px;
   font-size: 14px;
   line-height: 22px; }

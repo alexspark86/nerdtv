@@ -17,11 +17,13 @@
 
   .schedule-item__col1 {
     position: relative;
-    width: 20%;
+//    width: 20%;
+    flex-basis: 20%;
     min-width: 260px;
     }
   .schedule-item__col2 {
-    width: 24%;
+//    width: 24%;
+    flex-basis: 24%;
     min-width: 310px;
     }
   .schedule-item__col2,
@@ -100,7 +102,7 @@
     margin: 0 0 55px;
     min-height: 115px;
     font-size: 36px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 36px;
     }
   .title__time {
@@ -116,13 +118,13 @@
 
 
 .description {
-  padding: 40px 80px 38px 42px;
+  padding: 40px 80px 38px 35px;
   }
   .description__photo {
     position: relative;
     overflow: hidden;
     float: left;
-    margin: 0 50px 15px 0;
+    margin: 0 8% 15px 0;
     width: 146px;
     height: 146px;
     img {
@@ -137,7 +139,7 @@
   .description__leading {
     clear: left;
     float: left;
-    margin: 0 50px 0 0;
+    margin: 0 8% 7px 0;
     width: 146px;
     font-size: 14px;
     line-height: 22px;

@@ -14,46 +14,10 @@
 </header>
 
 <section class="video-section">
-    <div class="container" id="video-player">
-        <video id="nerdPlayer" class="video-js vjs-default-skin video-section__player" controls preload="auto" width="1280" height="720">
-            <source src="rtmp://nginx-rtmp.Labs.IntelliJ.Net:1935/live/march" type="video/flash">
-        </video>
-        <!--<div class="video-section__placeholder video-js vjs-default-skin">
-            <a href="rtmp://nginx-rtmp.Labs.IntelliJ.Net:1935/live/march" class="video-section__link vjs-big-play-button" title="View video"></a>
-        </div>-->
-    </div>
+    <div class="container" id="video-player"></div>
 </section>
 
-<section class="schedule">
-</section>
-<script id="schedule-template" type="text/template">
-    <div class="schedule-item">
-        <div class="container">
-            <div class="schedule-item__col1">
-                <div class="schedule-item__logo _<%= logoName %>"></div>
-            </div>
-            <div class="schedule-item__col2">
-                <div class="schedule-item__title title">
-                    <h2 class="title__text"><%= title %></h2>
-                    <div class="title__time">время <strong><%= timeStart %> &ndash; <%= timeEnd %></strong></div>
-                </div>
-            </div>
-            <div class="schedule-item__col3">
-                <div class="schedule-item__description description">
-                    <div class="description__photo">
-                        <%= photo %>
-                    </div>
-                    <div class="description__leading">
-                        ведущий <strong><%= leadName %></strong>
-                    </div>
-                    <div class="description__text">
-                        <%= description %>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</script>
+<section class="schedule"></section>
 
 <section class="hashtag">
     <div class="container">
@@ -64,7 +28,7 @@
 <div class="photos">
     <div class="container">
         <div class="photos__wrapper">
-            <div class="photos__inner"></div>
+            <div class="photos__inner" id="photos"></div>
         </div>
     </div>
 </div>
