@@ -6,6 +6,7 @@ define([
 ], function($, _, Backbone, videojs) {
 
     var VideoPlayer = Backbone.View.extend({
+        el: '#video-player',
         playerId: 'nerdPlayer',
         flashPlayer: 'app/js/vendor/video-js/video-js.swf',
 
