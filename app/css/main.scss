@@ -8,19 +8,7 @@
 
 @import "layout";
 @import "header";
+@import "video";
 @import "schedule";
 @import "hashtag";
 @import "photos";
-
-
-
-.vjs-default-skin .vjs-progress-control {
-  display: none;
-}
-.vjs-default-skin .vjs-big-play-button {
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-}
