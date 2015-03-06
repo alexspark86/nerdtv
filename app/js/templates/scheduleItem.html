@@ -7,17 +7,22 @@
         <div class="schedule-item__col2">
             <div class="schedule-item__title title">
                 <h2 class="title__text"><%= item.title %></h2>
-                <div class="title__time">время <strong><%= item.timeStart %> &ndash; <%= item.timeEnd %></strong></div>
+                <div class="title__time">время
+                    <strong><%= item.timeStart %>
+                        <% if (item.timeEnd !== "") { %>&ndash; <%= item.timeEnd %></strong><% } %>
+                </div>
             </div>
         </div>
         <div class="schedule-item__col3">
             <div class="schedule-item__description description">
+                <% if (item.leadName !== "") { %>
                 <div class="description__photo">
                     <%= item.photo %>
                 </div>
                 <div class="description__leading">
                     ведущий <strong><%= item.leadName %></strong>
                 </div>
+                <% } %>
                 <div class="description__text">
                     <%= item.description %>
                 </div>
